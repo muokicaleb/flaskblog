@@ -22,6 +22,12 @@ posts = [
 ]
 
 
+<<<<<<< HEAD:flaskblog/routes.py
+=======
+
+
+
+>>>>>>> 7cf086fa9af5ec81769212146655a3cf3f8218fb:flaskblog.py
 @app.route("/")
 @app.route("/home")
 def home():
