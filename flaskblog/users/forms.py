@@ -3,7 +3,6 @@ from flask_wtf.file import FileField, FileAllowed
 from flask_login import current_user
 from flaskblog.models import User
 from wtforms import StringField
-from wtforms import TextAreaField
 from wtforms import PasswordField
 from wtforms import SubmitField
 from wtforms import BooleanField
@@ -63,12 +62,6 @@ class UpdateAccountForm(FlaskForm):
             user = User.query.filter_by(email=email.data).first()
             if user:
                 raise ValidationError('That email already exists.')
-
-
-class PostForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired()])
-    content = TextAreaField('Content', validators=[DataRequired()])
-    submit = SubmitField('Post')
 
 
 class RequestResetForm(FlaskForm):
