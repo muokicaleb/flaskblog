@@ -1,5 +1,5 @@
 # flaskblog
-Using flask library to build a "twitter-like" web app a user can:
+Using flask library to build a web app a user can:
                      <ul>
                      	<li>Create an account.</li>
                      	<li>Login and logout</li>
